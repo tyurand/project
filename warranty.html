@@ -1,157 +1,155 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Axis - Мебель как точка опоры вашего уюта</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Аксис - Мебель как точка опоры вашего уюта</title>
+</head>
+
+<body>
     <header>
-      <!-- Темный блок хедера -->
-      <div class="header-top">
-        <div class="header-left">
-          <div class="logo">
-            <a class="logo" href="index.html"><img src="logo/logo_axis_black_no_background.png" alt="AXIS" /></a>
-          </div>
-          <div class="catalog-btn">
-            Каталог
-            <img src="icon/icon_catalog.png" alt="Меню" />
-          </div>
-          <div class="search-bar">
-            <input type="text" placeholder="Поиск по каталогу" />
-            <button>
-              <img src="icon/icon_lupa.png" alt="Поиск" />
-            </button>
-          </div>
-          <div class="header-right">
-              <div class="icons-group">
-                <img src="icon/icon_corzina.png" alt="Корзина" />
-
-                <img src="icon/icon_gear.png" alt="Настройки" />
-              </div>
+        <!-- Темный блок хедера -->
+        <div class="header-top">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo/logo_Аксис.png" alt="Аксис">
+                    </a>
+                </div>
+                <div class="catalog-btn">
+                    <a href="#categories">
+                        Каталог
+                        <img src="icon/icon_catalog.png" alt="Меню">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск по каталогу">
+                    <button>
+                        <img src="icon/icon_lupa.png" alt="Поиск">
+                    </button>
+                </div>
+                <div class="header-right">
+                    <div class="icons-group">
+                        <img src="icon/icon_corzina.png" alt="Корзина">
+                        <img src="icon/icon_gear.png" alt="Настройки">
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links">
+                <ul>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                </ul>
             </div>
         </div>
-
-        
-
-          <div class="auth-links">
-            <ul>
-                <li><a href="login.html">Войти</a></li>
-                <li><a href="register.html">Регистрация</a></li>
-            </ul>
-          </div>
+        <!-- Светлый блок хедера -->
+        <div class="header-bottom">
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li>
+                        <a id="nav-links-sale" href="sale.html">
+                            Скидки
+                            <div class="sale-icon-container">
+                                <img class="sale-img-default" src="icon/icon_sale.png" alt="%">
+                                <img class="sale-img-hover" src="icon/icon_sale_hover.png" alt="%">
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="warranty.html">Гарантии</a></li>
+                </ul>
+            </nav>
+            <div class="location">
+                <img src="icon/icon_geo.png" alt="Локация">
+                Омск
+            </div>
         </div>
-      </div>
-
-      <!-- Светлый блок хедера -->
-      <div class="header-bottom">
-        <nav class="nav-links">
-          <ul>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="reviews.html">Отзывы</a></li>
-            <li>
-              <a id="nav-links-sale" href="#">
-              Скидки
-                <div class="sale-icon-container">
-                  <img class="sale-img-default" src="icon/icon_sale.png" alt="%" />
-                  <img class="sale-img-hover" src="icon/icon_sale_hover.png" alt="%" />
-                </div>
-              </a>
-            </li>
-            <li><a href="#">Гарантии</a></li>
-          </ul>
-        </nav>
-        <div class="location">
-          <img src="icon/icon_geo.png" alt="Локация" />
-          Омск
-        </div>
-      </div>
     </header>
-<main>
-    <div class="inner-page-container">
-        <h1 class="main-title">Гарантийные обязательства</h1>
-
-        <!-- Вводный блок -->
-        <div class="warranty-header-box">
-            <p>Мы в Axis уверены в качестве каждого изделия. Наша мебель проходит многократный контроль на этапах проектирования, выбора материалов и финальной сборки. Мы предоставляем официальную гарантию производителя на весь ассортимент.</p>
-        </div>
-
-        <div class="warranty-grid">
-            <!-- Сроки гарантии -->
-            <div class="warranty-item">
-                <div class="warranty-icon-block">
-                    <!-- МЕСТО ДЛЯ ИКОНКИ КАЛЕНДАРЯ -->
-                    <img src="path_to_calendar_icon.png" alt="Срок">
-                </div>
-                <h3>Сроки гарантии</h3>
-                <ul>
-                    <li><strong>24 месяца</strong> — на корпусную мебель для дома (гостиные, спальни, кухни).</li>
-                    <li><strong>18 месяцев</strong> — на мягкую мебель и офисные решения.</li>
-                    <li><strong>12 месяцев</strong> — на фурнитуру и комплектующие при условии нашей сборки.</li>
-                </ul>
+    <main>
+        <div class="inner-page-container">
+            <h1 class="main-title">Гарантийные обязательства</h1>
+    
+            <!-- Вводный блок -->
+            <div class="warranty-header-box">
+                <p>Мы в Axis уверены в качестве каждого изделия. Наша мебель проходит многократный контроль на этапах
+                    проектирования, выбора материалов и финальной сборки. Мы предоставляем официальную гарантию
+                    производителя на весь ассортимент.</p>
             </div>
-
-            <!-- Что покрывает гарантия -->
-            <div class="warranty-item">
-                <div class="warranty-icon-block">
-                    <!-- МЕСТО ДЛЯ ИКОНКИ ЩИТА -->
-                    <img src="path_to_shield_icon.png" alt="Защита">
+    
+            <div class="warranty-grid">
+                <!-- Сроки гарантии -->
+                <div class="warranty-item">
+                    <div class="warranty-icon-block">
+                        <!-- МЕСТО ДЛЯ ИКОНКИ КАЛЕНДАРЯ -->
+                        <img src="path_to_calendar_icon.png" alt="Срок">
+                    </div>
+                    <h3>Сроки гарантии</h3>
+                    <ul>
+                        <li><strong>24 месяца</strong> — на корпусную мебель для дома (гостиные, спальни, кухни).</li>
+                        <li><strong>18 месяцев</strong> — на мягкую мебель и офисные решения.</li>
+                        <li><strong>12 месяцев</strong> — на фурнитуру и комплектующие при условии нашей сборки.</li>
+                    </ul>
                 </div>
-                <h3>Что является гарантийным случаем?</h3>
-                <ul>
-                    <li>Производственные дефекты материалов (трещины, сколы под покрытием).</li>
-                    <li>Неисправность заводских механизмов трансформации и фурнитуры.</li>
-                    <li>Несоответствие изделия заявленным размерам или конструкции.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Блок "Как воспользоваться" -->
-        <section class="claim-steps">
-            <h2 style="text-transform: uppercase; letter-spacing: 2px;">Как заявить о гарантийном случае?</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <span class="step-number">01</span>
-                    <p>Сделайте фото или видео дефекта</p>
-                </div>
-                <div class="step">
-                    <span class="step-number">02</span>
-                    <p>Отправьте заявку на Mebel-Axis@mail.ru</p>
-                </div>
-                <div class="step">
-                    <span class="step-number">03</span>
-                    <p>Наш мастер приедет для осмотра в течение 3-х дней</p>
+    
+                <!-- Что покрывает гарантия -->
+                <div class="warranty-item">
+                    <div class="warranty-icon-block">
+                        <!-- МЕСТО ДЛЯ ИКОНКИ ЩИТА -->
+                        <img src="path_to_shield_icon.png" alt="Защита">
+                    </div>
+                    <h3>Что является гарантийным случаем?</h3>
+                    <ul>
+                        <li>Производственные дефекты материалов (трещины, сколы под покрытием).</li>
+                        <li>Неисправность заводских механизмов трансформации и фурнитуры.</li>
+                        <li>Несоответствие изделия заявленным размерам или конструкции.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <div style="margin-top: 60px; color: #7F8C8D; font-size: 14px;">
-            <p>* Гарантия не распространяется на повреждения, возникшие в результате неправильной эксплуатации, самостоятельной неквалифицированной сборки или естественного износа материалов.</p>
+            <!-- Блок "Как воспользоваться" -->
+            <section class="claim-steps">
+                <h2 style="text-transform: uppercase; letter-spacing: 2px;">Как заявить о гарантийном случае?</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <span class="step-number">01</span>
+                        <p>Сделайте фото или видео дефекта</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">02</span>
+                        <p>Отправьте заявку на Mebel-Axis@mail.ru</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">03</span>
+                        <p>Наш мастер приедет для осмотра в течение 3-х дней</p>
+                    </div>
+                </div>
+            </section>
+    
+            <div style="margin-top: 60px; color: #7F8C8D; font-size: 14px;">
+                <p>* Гарантия не распространяется на повреждения, возникшие в результате неправильной эксплуатации,
+                    самостоятельной неквалифицированной сборки или естественного износа материалов.</p>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
     <footer>
         <div class="footer-container">
             <!-- Лого и копирайт -->
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="logo/logo_axis_black_no_background.png" alt="AXIS">
+                    <img src="logo/logo_Аксис.png" alt=" Аксис">
                 </div>
                 <p class="copyright">
-                    Мебельный салон «AXIS» © 2005 - 2026.<br>
+                    Мебельный салон «Аксис» © 2005 - 2026.<br>
                     Все права сохранены.
                 </p>
             </div>
-
             <!-- Адреса и соцсети -->
             <div class="footer-contacts">
                 <div class="contact-block">
@@ -159,23 +157,19 @@
                     Проспект Звёздный, д. 99,<br>
                     оф. 3, г. Омск, Россия
                 </div>
-                
                 <div class="contact-block">
                     <span class="contact-label">Адрес склада:</span>
                     г. Омск, ул. Биофабрика 28/2
                 </div>
-
                 <div class="contact-block">
-                    Mebel-Axis @mail.ru<br>
+                    Mebel-Axis@mail.ru<br>
                     +7 (999) 123-45-67
                 </div>
-
                 <div class="social-icons">
                     <img id="tg" src="icon/icon_mediatg.png" alt="Telegram">
                     <img id="vk" src="icon/icon_mediavk.png" alt="VK">
                 </div>
             </div>
-
             <!-- Сервис -->
             <div class="footer-nav">
                 <h4>Сервис</h4>
@@ -186,7 +180,6 @@
                     <li><a href="delivery.html">Выезд профессионалов для замеров</a></li>
                 </ul>
             </div>
-
             <!-- Покупателю -->
             <div class="footer-nav">
                 <h4>Покупателю</h4>
@@ -197,8 +190,8 @@
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
-
         </div>
     </footer>
-  </body>
+</body>
+
 </html>
