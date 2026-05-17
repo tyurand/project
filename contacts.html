@@ -21,17 +21,43 @@
             <img src="logo/logo_Аксис.png" alt="Аксис">
           </a>
         </div>
-        <div class="catalog-btn">
-          <a href="index.html#categories">
-            Каталог
-            <img src="icon/icon_catalog.png" alt="Меню">
-          </a>
+
+      </div>
+      <div class="header-right">
+        <div class="auth-links">
+          <ul>
+            <li><a href="login.html">Войти</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+          </ul>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Поиск по каталогу">
-          <button>
-            <img src="icon/icon_lupa.png" alt="Поиск">
+        <div class="catalog-dropdown-wrapper">
+          <button class="catalog-btn" id="catalogBtn">
+            Каталог
+            <div class="burger-icon" id="burgerIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
+          <div class="catalog-menu" id="catalogMenu">
+            <div class="search-bar">
+              <input type="text" placeholder="Поиск по каталогу">
+              <button>
+                <img src="icon/icon_lupa.png" alt="Поиск">
+              </button>
+            </div>
+            <ul>
+              <li><a href="katigorii-jilay_mebel.html">Жилая мебель</a></li>
+              <li><a href="katigorii-offis.html">Офис</a></li>
+              <li><a href="katigorii-magkay_zona.html">Мягкая зона</a></li>
+              <li><a href="katigorii-kihny.html">Кухня</a></li>
+              <li><a href="katigorii-gostinay.html">Гостиная</a></li>
+              <li><a href="katigorii-spalny.html">Спальня</a></li>
+              <li><a href="katigorii-detskaya.html">Детская</a></li>
+              <li><a href="katigorii-prizhoyaya.html">Прихожая</a></li>
+              <li><a href="#">Custom</a></li>
+            </ul>
+          </div>
         </div>
         <div class="header-right">
           <div class="icons-group">
@@ -39,12 +65,6 @@
             <img src="icon/icon_gear.png" alt="Настройки">
           </div>
         </div>
-      </div>
-      <div class="auth-links">
-        <ul>
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="register.html">Регистрация</a></li>
-        </ul>
       </div>
     </div>
     <!-- Светлый блок хедера -->
@@ -67,39 +87,36 @@
           <li><a href="warranty.html">Гарантии</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
   <main>
     <div class="inner-page-container">
-      <h1 class="main-title" style="text-align: center;">Контакты</h1>
-
       <div class="contacts-wrapper">
         <div class="contacts-info">
+          <h1 class="main-title" style="text-align: center;">Контакты</h1>
           <div class="contact-item">
             <h4>Телефон</h4>
             <p>+7 (999) 123-45-67</p>
           </div>
-
           <div class="contact-item">
             <h4>Электронная почта</h4>
             <p>Mebel-Axis@mail.ru</p>
           </div>
-
           <div class="contact-item">
             <h4>Салон</h4>
             <p>Проспект Звёздный, д. 99, оф. 3<br>г. Омск, Россия</p>
           </div>
-
           <div class="contact-item">
             <h4>Склад</h4>
             <p>ул. Биофабрика 28/2<br>г. Омск, Россия</p>
           </div>
         </div>
-
         <div class="map-placeholder">
-          <!-- Сюда можно вставить iframe с Яндекс.Картами или Google Maps -->
-          <span>[ Место для интерактивной карты ]</span>
+          <h1 class="main-title">Mы на карте</h1>
+          <span><iframe
+              src="https://www.google.com/maps/embed?pb=!4v1778930082847!6m8!1m7!1sCAWCrNVd_dOmO325eO6wJQ!2m2!1d55.02194606974695!2d72.95681597728547!3f349.06616!4f0!5f0.7820865974627469"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe></span>
         </div>
       </div>
     </div>
@@ -132,7 +149,7 @@
           +7 (999) 123-45-67
         </div>
         <div class="social-icons">
-          <img id="tg" src="icon/icon_mediatg.png" alt="Telegram">
+          <img id="max" src="icon/Max_logo.svg" alt="max">
           <img id="vk" src="icon/icon_mediavk.png" alt="VK">
         </div>
       </div>
@@ -159,5 +176,16 @@
     </div>
   </footer>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {   //  полностью загрузи и нарисуй HTML - структуру сайта, а уже потом запускай этот код
+    const catalogBtn = document.getElementById('catalogBtn');
+    const catalogMenu = document.getElementById('catalogMenu');
+    // Открытие/закрытие меню по клику на кнопку
+    catalogBtn.addEventListener('click', function () {
+      catalogMenu.classList.toggle('active');
+      catalogBtn.classList.toggle('open');
+    });
+  })
+</script>
 
 </html>

@@ -21,17 +21,43 @@
             <img src="logo/logo_Аксис.png" alt="Аксис">
           </a>
         </div>
-        <div class="catalog-btn">
-          <a href="index.html#categories">
-            Каталог
-            <img src="icon/icon_catalog.png" alt="Меню">
-          </a>
+
+      </div>
+      <div class="header-right">
+        <div class="auth-links">
+          <ul>
+            <li><a href="login.html">Войти</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+          </ul>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Поиск по каталогу">
-          <button>
-            <img src="icon/icon_lupa.png" alt="Поиск">
+        <div class="catalog-dropdown-wrapper">
+          <button class="catalog-btn" id="catalogBtn">
+            Каталог
+            <div class="burger-icon" id="burgerIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
+          <div class="catalog-menu" id="catalogMenu">
+            <div class="search-bar">
+              <input type="text" placeholder="Поиск по каталогу">
+              <button>
+                <img src="icon/icon_lupa.png" alt="Поиск">
+              </button>
+            </div>
+            <ul>
+              <li><a href="katigorii-jilay_mebel.html">Жилая мебель</a></li>
+              <li><a href="katigorii-offis.html">Офис</a></li>
+              <li><a href="katigorii-magkay_zona.html">Мягкая зона</a></li>
+              <li><a href="katigorii-kihny.html">Кухня</a></li>
+              <li><a href="katigorii-gostinay.html">Гостиная</a></li>
+              <li><a href="katigorii-spalny.html">Спальня</a></li>
+              <li><a href="katigorii-detskaya.html">Детская</a></li>
+              <li><a href="katigorii-prizhoyaya.html">Прихожая</a></li>
+              <li><a href="#">Custom</a></li>
+            </ul>
+          </div>
         </div>
         <div class="header-right">
           <div class="icons-group">
@@ -39,12 +65,6 @@
             <img src="icon/icon_gear.png" alt="Настройки">
           </div>
         </div>
-      </div>
-      <div class="auth-links">
-        <ul>
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="register.html">Регистрация</a></li>
-        </ul>
       </div>
     </div>
     <!-- Светлый блок хедера -->
@@ -67,13 +87,11 @@
           <li><a href="warranty.html">Гарантии</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
   <main>
     <div class="inner-page-container">
       <h1 class="main-title" style="text-align: center;">Доставка и сервис</h1>
-
       <div class="delivery-grid">
         <div class="delivery-card">
           <h3>Доставка по Омску</h3>
@@ -81,7 +99,6 @@
             транспортировки. Все элементы надежно упакованы.</p>
           <span class="delivery-price">от 800 ₽</span>
         </div>
-
         <div class="delivery-card">
           <h3>Подъем на этаж</h3>
           <p>Наши специалисты аккуратно занесут мебель в вашу квартиру или офис. Стоимость рассчитывается в зависимости
@@ -89,7 +106,6 @@
             наличия грузового лифта и габаритов заказа.</p>
           <span class="delivery-price">от 200 ₽ / этаж</span>
         </div>
-
         <div class="delivery-card">
           <h3>Профессиональная сборка</h3>
           <p>Качественная сборка — залог долговечности мебели. Наши мастера соберут изделия строго по технологии в
@@ -97,7 +113,6 @@
             для вас время и уберут за собой упаковочный мусор.</p>
           <span class="delivery-price">10% от стоимости изделия</span>
         </div>
-
         <div class="delivery-card">
           <h3>Выезд на замер</h3>
           <p>Для проектов категории Custom и комплексных офисных решений мы предлагаем выезд специалиста для точного
@@ -135,7 +150,7 @@
           +7 (999) 123-45-67
         </div>
         <div class="social-icons">
-          <img id="tg" src="icon/icon_mediatg.png" alt="Telegram">
+          <img id="max" src="icon/Max_logo.svg" alt="max">
           <img id="vk" src="icon/icon_mediavk.png" alt="VK">
         </div>
       </div>
@@ -162,5 +177,16 @@
     </div>
   </footer>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {   //  полностью загрузи и нарисуй HTML - структуру сайта, а уже потом запускай этот код
+    const catalogBtn = document.getElementById('catalogBtn');
+    const catalogMenu = document.getElementById('catalogMenu');
+    // Открытие/закрытие меню по клику на кнопку
+    catalogBtn.addEventListener('click', function () {
+      catalogMenu.classList.toggle('active');
+      catalogBtn.classList.toggle('open');
+    });
+  })
+</script>
 
 </html>
