@@ -129,7 +129,7 @@ a {
     gap: 15px;
     font-size: 14px;
 }
-                          
+
 
 .auth-links ul {
     list-style: none;
@@ -140,15 +140,16 @@ a {
 .auth-links a:hover {
     color: #80a2d9;
 }
+
 /* --- Кнопка Каталог и выпадающее меню --- */
 .catalog-dropdown-wrapper {
     background-color: #1E293B;
-    position: relative; 
+    position: relative;
     display: inline-block;
 }
 
 .catalog-btn {
-    background-color: #1E293B; 
+    background-color: #1E293B;
     color: #FFFFFF;
     border: none;
     padding: 12px 20px;
@@ -172,7 +173,7 @@ a {
     justify-content: space-between;
 }
 
-.burger-icon span { 
+.burger-icon span {
     display: block;
     width: 100%;
     height: 2px;
@@ -183,9 +184,11 @@ a {
 .catalog-btn.open .burger-icon span:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
 }
+
 .catalog-btn.open .burger-icon span:nth-child(2) {
     opacity: 0;
 }
+
 .catalog-btn.open .burger-icon span:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
@@ -193,16 +196,16 @@ a {
 /* Само выпадающее меню */
 .catalog-menu {
     position: absolute;
-    top: 100%; 
+    top: 100%;
     width: 240px;
     background-color: #FFFFFF;
     border: 1px solid #D1D9E0;
     border-top: none;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 100; 
+    z-index: 100;
 }
 
 /* Класс, который JS будет добавлять для показа меню */
@@ -237,8 +240,9 @@ a {
 
 .catalog-menu a:hover {
     background-color: #F4F5F7;
-    color: #3498DB; 
+    color: #3498DB;
 }
+
 /* Нижняя часть хедера (светлая) */
 .header-bottom {
     background-color: #f4f5f7;
@@ -562,12 +566,14 @@ main {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .product-card-placeholder img {
     margin: 0 auto;
     width: 100%;
     height: 60%;
     object-fit: cover;
 }
+
 .product-card-placeholder div {
     display: flex;
     justify-content: center;
@@ -584,7 +590,7 @@ main {
     transform: translateY(-5px);
 }
 
-.product-card-placeholder-text p{
+.product-card-placeholder-text p {
     width: 70%;
     height: auto;
 }
@@ -669,10 +675,10 @@ main {
     align-items: center;
 }
 
-.benefit-icon-placeholder img{
+.benefit-icon-placeholder img {
     object-fit: cover;
     width: 100%;
- 
+
 }
 
 .benefit-item h3 {
@@ -829,6 +835,7 @@ footer {
     align-items: center;
     gap: 30px;
 }
+
 .social-icons img {
     scale: 75%;
 }
@@ -914,6 +921,7 @@ footer {
     background-color: #E2E0D8;
     position: relative;
 }
+
 .about-image img {
     height: 100%;
     width: 100%;
@@ -985,6 +993,7 @@ footer {
     margin: 0;
     line-height: 1.5;
 }
+
 .map-placeholder {
     display: flex;
     align-items: center;
@@ -997,7 +1006,8 @@ footer {
     gap: 10px;
     margin-top: 30px;
 }
-.map-placeholder span{
+
+.map-placeholder span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1243,7 +1253,7 @@ footer {
 
 .sale-hero-content h2 {
     font-size: 42px;
-    color: #F1C40F; 
+    color: #F1C40F;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -1271,7 +1281,8 @@ footer {
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: #F1C40F; /* Желтый для скидочного бейджа */
+    background-color: #F1C40F;
+    /* Желтый для скидочного бейджа */
     color: #FFF;
     padding: 5px 12px;
     font-size: 14px;
@@ -1289,6 +1300,7 @@ footer {
     padding: 0 20px;
     text-align: center;
 }
+
 .sale-card-img img {
     width: 100%;
     height: 100%;
@@ -1402,7 +1414,8 @@ footer {
     transition: color 0.3s;
 }
 
-.filter-item:hover, .filter-item.active {
+.filter-item:hover,
+.filter-item.active {
     color: #3498DB;
     font-weight: 600;
 }
@@ -1425,7 +1438,8 @@ footer {
 
 .product-card-office:hover {
     transform: translateY(-10px);
-     box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* 0-ось x 10-ось y 30-размытие */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* 0-ось x 10-ось y 30-размытие */
 }
 
 .product-img-box {
@@ -1490,3 +1504,244 @@ footer {
     color: #FFF;
 }
 
+/* ==========================================================================
+   АДАПТИВНАЯ ВЕРСТКА ДЛЯ САЙТА «АКСИС»
+   ========================================================================== */
+
+/* 1. Крупные планшеты и небольшие ноутбуки (до 1200px) */
+@media (max-width: 1200px) {
+    .header-top {
+        padding: 25px 40px;
+    }
+
+    .header-bottom {
+        padding: 15px 40px;
+    }
+
+    .nav-links ul {
+        gap: 30px;
+    }
+
+    .footer-container {
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .footer-brand {
+        margin-left: 0;
+    }
+}
+
+/* 2. Обычные планшеты (до 992px) */
+@media (max-width: 992px) {
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-item {
+        border-bottom: 1px solid #D1D9E0;
+    }
+
+    .benefit-item:nth-child(2),
+    .benefit-item:nth-child(4) {
+        border-right: none;
+    }
+
+    .benefit-item:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+        .header-bottom {
+        padding: 15px 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .about-wrapper {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .map-placeholder iframe {
+        width: 400px;
+        height: 400px;
+    }
+
+    .map-placeholder {
+        margin: 0;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .auth-links ul {
+        gap: 25px;
+    }
+
+    .header-bottom {
+        padding: 15px 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        gap: 25px;
+    }
+
+    .main-title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .slider-container {
+        height: 300px;
+    }
+
+    .popular-slider-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .product-card-placeholder {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .nav-arrow-round {
+        display: none;
+    }
+
+    .sale-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .sale-hero-content h2 {
+        font-size: 28px;
+    }
+
+    .sale-grid,
+    .office-grid,
+    .delivery-grid,
+    .reviews-grid,
+    .warranty-grid,
+    .steps-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .claim-steps {
+        padding: 30px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .map-placeholder iframe {
+        width: 200px;
+        height: 400px;
+    }
+
+    .map-placeholder {
+        margin: 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        border: none;
+    }
+
+    .benefit-item {
+        border: 1px solid #D1D9E0 !important;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    .slider-container {
+        height: 200px;
+    }
+
+    .catalog-menu {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    .catalog-menu.active {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-links {
+        gap: 0px;
+    }
+
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .nav-links ul {
+        font-size: 12px;
+        font-weight: 500;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+}
